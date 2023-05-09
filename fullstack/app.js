@@ -4,9 +4,21 @@ const port = 8811;
 const categoryRouter = require('./src/controller/categoryRouter');
 const productRouter = require('./src/controller/productRouter');
 
+//middleware supporting library
+//static file path
+app.use(express.static(__dirname + '/public'))
+//html file path
+app.set('views', './src/views')
+//view engine name
+app.set('view engine', 'ejs')
+
+
+
+
 //routes
 app.get('/', (req, res) => {
-    res.send('Hi From express Default route');
+    //res.send('Hii From Express Default route')
+    res.render('index', { title: 'Home Page' })
 })
 
 app.use('/category', categoryRouter)
