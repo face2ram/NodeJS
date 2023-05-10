@@ -24,15 +24,19 @@ let data = [
     }
 ]
 
-categoryRouter.route('/')
-    .get((req, res) => {
-        // res.send(data)
-        res.render('category', { title: 'Category Page', data })
-    })
+function router(menu) {
 
-categoryRouter.route('/details')
-    .get((req, res) => {
-        res.send('This is Category Details route')
-    })
+    categoryRouter.route('/')
+        .get((req, res) => {
+            // res.send(data)
+            res.render('category', { title: 'Category Page', data, menu })
+        })
 
-module.exports = categoryRouter;
+    categoryRouter.route('/details')
+        .get((req, res) => {
+            res.send('This is Category Details route')
+        })
+
+    return categoryRouter;
+}
+module.exports = router;
