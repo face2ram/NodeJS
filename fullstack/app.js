@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 8811;
+let { dbConnect } = require('./src/controller/dbController');
+
 
 let menu = [
     { link: '/', name: 'Home' },
@@ -19,9 +21,6 @@ app.set('views', './src/views')
 //view engine name
 app.set('view engine', 'ejs')
 
-
-
-
 //routes
 app.get('/', (req, res) => {
     //res.send('Hii From Express Default route')
@@ -34,5 +33,6 @@ app.use('/products', productRouter)
 //create server
 app.listen(port, (err) => {
     if (err) throw err;
+    dbConnect()
     console.log(`Server listening on ${port}`);
 })
