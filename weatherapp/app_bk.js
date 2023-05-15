@@ -1,5 +1,5 @@
-import express from 'express'
-import request from 'request'
+const express = require('express')
+const request = require('request')
 const port = process.env.PORT || 7660;
 const app = express()
 
