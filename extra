@@ -10,21 +10,20 @@ Day-2 https://youtu.be/SEWeGukoJZI
 Day-3 https://youtu.be/5nGDoyCmdwM
 Day-4 https://youtu.be/U_G_JuTIQy8
 Day-5 https://youtu.be/xcafLEkHptU
-Please ping me at 7997998958 admission related queries 
+Please ping me at 7997998958 admission related queries
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJs-Mongo-Express)
 Third Party Api (Weather Api)
+Redis v3 > 6379
+Node-Es6(.babel)
+Redis v4
+Redisv4 With Mongov5
 ////////////
-
-Redis  > 6379
-
 ImageUpload(formidable)
 ImageUpload
-RedisWithMongo
-Node-Es6(.babel)
-MongoDb Basic >27017  (local/cloud)
+MongoDb Basic >27017 (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1
 DashBoard(Crud)
@@ -51,7 +50,6 @@ FIREBASE
 React/Angular
 Html/css/jquery
 
-
 NodeJS
 Single threaded , async , non blocking I/O
 
@@ -61,80 +59,89 @@ Callback
 open source
 (anybody can contribute)
 
-
 NPM> node package manager
 (It help to install the packages as well as excute the commands)
 3,167,219
 
 JSON> JavaScript object notation
+
 > Way to represnt the data
 > Key value pair
 
 [
-    {
-        "name":"John",
-        "city":"Delhi"
-    },
-    {
-        "name":"Nikita",
-        "city":"Paris",
-        "subject":"Node"
-    }
+{
+"name":"John",
+"city":"Delhi"
+},
+{
+"name":"Nikita",
+"city":"Paris",
+"subject":"Node"
+}
 ]
 
 //////
 package.json
+
 > entry point to the ap
 > meta data (version,description,details)
 > All the packages we are using
 > Script(start,test)
 
 /// step to generate package.json
-* NodeJs must be installed in your laptop
-> open the terminal/cmd and go inside the folder
-> npm init
-> Answer all questions
-> Type Yes
+
+- NodeJs must be installed in your laptop
+  > open the terminal/cmd and go inside the folder
+  > npm init
+  > Answer all questions
+  > Type Yes
 
 /// step to install package
-* NodeJs must be installed in your laptop
-> open the terminal/cmd and go inside the folder
-> npm i package / npm install package
+
+- NodeJs must be installed in your laptop
+  > open the terminal/cmd and go inside the folder
+  > npm i package / npm install package
 
 > Local Dependency
-* Local to the folder
-* used for the one application only
-* Added to package.json
-* npm i packagename
+
+- Local to the folder
+- used for the one application only
+- Added to package.json
+- npm i packagename
 
 > Dev Dependency
-* Only require at the time development
-* Added to package.json
-* npm i --save-dev packagename
+
+- Only require at the time development
+- Added to package.json
+- npm i --save-dev packagename
 
 > global Dependecy
-* Installed in your laptop
-* Can be used for any application
-* Need admin access to install
-* Not added in the package.json
-* Only used for running or generating the application
+
+- Installed in your laptop
+- Can be used for any application
+- Need admin access to install
+- Not added in the package.json
+- Only used for running or generating the application
 
 /// Step to install global Dependecy
+
 # window
-* open the cmd as admin
-* npm i -g packagename
-> npm i -g nodemon
+
+- open the cmd as admin
+- npm i -g packagename
+  > npm i -g nodemon
 
 #mac/linux
-* open terminal
-* sudo npm i -g packagename
-> sudo npm i -g nodemon
+
+- open terminal
+- sudo npm i -g packagename
+  > sudo npm i -g nodemon
 
 Ecma Script > Standard of javascript
 es5
 
 function add(a,b){
-    return a+b
+return a+b
 }
 
 es6
@@ -150,42 +157,41 @@ let > we cannot redclare but can reassign
 const > we cannot redclare nor reassign
 
 > var a = 10
-undefined
+> undefined
 > a
-10
+> 10
 > var a = 20
-undefined
+> undefined
 > a
-20
+> 20
 > a = 30
-30
+> 30
 > a
-30
+> 30
 > let b = 10
-undefined
+> undefined
 > b
-10
+> 10
 > let b = 11
-Uncaught SyntaxError: Identifier 'b' has already been declared
+> Uncaught SyntaxError: Identifier 'b' has already been declared
 > b = 11
-11
+> 11
 > const c = 10
-undefined
+> undefined
 > c
-10
+> 10
 > const c = 11
-Uncaught SyntaxError: Identifier 'c' has already been declared
+> Uncaught SyntaxError: Identifier 'c' has already been declared
 > c = 11
-Uncaught TypeError: Assignment to constant variable.
-
+> Uncaught TypeError: Assignment to constant variable.
 
 nodemon
 
-
 Param
+
 > What we pass after /
 > We need to define in route
-QueryParams
+> QueryParams
 > What we pass after ?
 > No Need to define
 
@@ -199,10 +205,9 @@ let a = 10;
 let b = `my age is ${a}`
 "my age is 10"
 
-
 ////////
 Redis > 6379
-KEYS *
+KEYS \*
 set key value
 get keyname
 del keyname
